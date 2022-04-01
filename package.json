@@ -1,0 +1,33 @@
+{
+  "name": "@stdlib/math-base-special-inv",
+  "version": "0.0.0",
+  "description": "Compute the multiplicative inverse of a double-precision floating-point number.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-special-inv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "inv",
+    "multiplicative",
+    "inverse",
+    "reciprocal",
+    "number",
+    "double-precision",
+    "double",
+    "dbl"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
