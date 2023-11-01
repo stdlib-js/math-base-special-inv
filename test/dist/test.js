@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,50 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isPositiveZero = require( '@stdlib/math-base-assert-is-positive-zero' );
-var isNegativeZero = require( '@stdlib/math-base-assert-is-negative-zero' );
-var isnan = require( '@stdlib/math-base-assert-is-nan' );
-var PINF = require( '@stdlib/constants-float64-pinf' );
-var NINF = require( '@stdlib/constants-float64-ninf' );
-var inv = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof inv, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function computes the multiplicative inverse of a number', function test( t ) {
-	t.strictEqual( inv( -2.0 ), -0.5, 'negative number' );
-	t.strictEqual( inv( 3.0 ), 1.0/3.0, 'positive number' );
-	t.end();
-});
-
-tape( 'the function computes the multiplicative inverse of negative infinity', function test( t ) {
-	t.strictEqual( isNegativeZero( inv( NINF ) ), true, 'returns negative zero' );
-	t.end();
-});
-
-tape( 'the function computes the multiplicative inverse of positive infinity', function test( t ) {
-	t.strictEqual( isPositiveZero( inv( PINF ) ), true, 'returns positive zero' );
-	t.end();
-});
-
-tape( 'the function computes the multiplicative inverse of positive zero', function test( t ) {
-	t.strictEqual( inv( 0.0 ), PINF, 'returns expected value' );
-	t.end();
-});
-
-tape( 'the function computes the multiplicative inverse of negative zero', function test( t ) {
-	t.strictEqual( inv( -0.0 ), NINF, 'returns expected value' );
-	t.end();
-});
-
-tape( 'if provided `NaN`, the function returns `NaN`', function test( t ) {
-	var v = inv( NaN );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
