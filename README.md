@@ -63,6 +63,11 @@ y = \frac{1}{x}
 ## Usage
 
 ```javascript
+import inv from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-inv@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-inv/tags). For example,
+
+```javascript
 import inv from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-inv@v0.2.0-esm/index.mjs';
 ```
 
@@ -105,7 +110,7 @@ v = inv( NaN );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import inv from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-inv@v0.2.0-esm/index.mjs';
+import inv from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-inv@esm/index.mjs';
 
 var x;
 var i;
