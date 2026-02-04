@@ -63,7 +63,7 @@ y = \frac{1}{x}
 ## Usage
 
 ```javascript
-import inv from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-inv@esm/index.mjs';
+import inv from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-inv@v0.2.3-esm/index.mjs';
 ```
 
 #### inv( x )
@@ -105,7 +105,7 @@ v = inv( NaN );
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import inv from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-inv@esm/index.mjs';
+import inv from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-inv@v0.2.3-esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
